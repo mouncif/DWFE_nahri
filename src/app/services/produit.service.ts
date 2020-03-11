@@ -6,24 +6,24 @@ import { Produit } from '../models/produit';
   providedIn: 'root'
 })
 export class ProduitService {
+  
+  constructor(private http: HttpClient) {
+  }
 
-  constructor(private http:HttpClient) {
-   }
-
-   findAll(){
+  findAll() {
     return this.http.get<[Produit]>(" http://localhost:3000/produits");
   }
-  delete(id){
+  deleteProduit(id) {
     return this.http.delete(`http://localhost:3000/produits/${id}`);
   }
-  
-    add(produit){
-      return this.http.post("http://localhost:3000/produits", produit);
-    }
-    update(produit){
-      return this.http.put(`http://localhost:3000/produits/${produit.id}`, produit);
-    }
-
-
+  addProduit(produit) {
+    return this.http.post("http://localhost:3000/produits", produit);
+  }
+  updateProduit(produit) {
+    return this.http.put(`http://localhost:3000/produits/${produit.id}`, produit);
+  }
+  getProduitById(id: any) {
+    return this.http.get<Produit>(`http://localhost:3000/produits/${id}`);
+  }
 
 }

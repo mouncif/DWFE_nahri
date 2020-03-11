@@ -1,11 +1,11 @@
 export interface Produit {
     id?: number;
     nom?: string;
-    nom_court?:string,
-    prix_b?: number;
-    prix_v?: number;
-    seuil_max?:number;
+    nomCourt?:string;
+    prixBase?: number;
+    prixVente?: number;
+    seuilMax?:number;
     unite?:number;
-    quantite_ini?:number; 
-    quantite_act?:number; 
+    qteInit?:number; 
+    qteActuel?:number; 
 }

@@ -1,14 +1,26 @@
 {
-    "produits": [{
-        "id": 1,
-        "nom": "voiture",
-        "nom_court": "REUNAULT",
-        "prix_b": 7,
-        "prix_v": 10,
-        "quantite": 10,
-        "seuil_max": 10,
-        "unite": 10,
-        "quantite_ini": 10,
-        "quantite_act": 10
-    }]
+  "produits": [
+    {
+      "nom": "dedd",
+      "nomCourt": "edede",
+      "prixBase": 0,
+      "prixVente": 0,
+      "qteActuel": 0,
+      "qteInit": 0,
+      "seuilMax": 0,
+      "unite": 0,
+      "id": 2
+    },
+    {
+      "nom": "aaaaerrrrrrrr",
+      "nomCourt": "errrr",
+      "prixBase": 0,
+      "prixVente": 0,
+      "qteActuel": 0,
+      "qteInit": 0,
+      "seuilMax": 0,
+      "unite": 0,
+      "id": 3
+    }
+  ]
 }

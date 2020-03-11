@@ -1,0 +1,56 @@
+<p>list-produits works!</p>
+<div class="text-center btn-margs">
+    <button class="btn btn-primary" [routerLink]="['/add-produit']">Ajouter produit</button>
+</div>
+<div class="col-sm-12">
+    <div class="row">
+        <div class="col-md-6">
+            <h3>LIST OF PRODUIT</h3>
+        </div>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">nom </th>
+                <th scope="col">Nom court </th>
+                <th scope="col">Prix de base </th>
+                <th scope="col">Prix de vente </th>
+                <th scope="col">Seuil max </th>
+                <th scope="col">unite</th>
+                <th scope="col">quantite unitaire </th>
+                <th scope="col">quantite actuel </th>
+                <th scope="col">Action </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let produit of produits">
+
+                <th>{{produit.id}}</th>
+                <td>{{produit.nom}}</td>
+                <td>{{produit.nomCourt}}</td>
+                <td>{{produit.prixBase}}</td>
+                <td>{{produit.prixVente}}</td>
+                <td>{{produit.seuilMax}}</td>
+                <td>{{produit.unite}}</td>
+                <td>{{produit.qteInit}}</td>
+                <td>{{produit.qteActuel}}</td>
+
+                <td>
+                    <button (click)="deleteProduit(produit.id)" class='btn btn-sm btn-danger'>
+                        <span class="badge badge-danger"></span><i class="fas fa-trash"></i>
+                    </button>
+                    <button class="btn btn-sm btn-success" [routerLink]="['/update-produit', produit.id]">
+                        <span class="badge badge-success"></span><i class="fas fa-pencil"></i> 
+                    </button>
+                </td>
+            </tr>
+            <!-- <script>
+                $("#menu-toggle").click(function(e) {
+                    e.preventDefault();
+                    $("#wrapper").toggleClass("toggled");
+                });
+            </script> -->
+        </tbody>
+    </table>
+</div>
