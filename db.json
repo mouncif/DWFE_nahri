@@ -2,7 +2,7 @@
   "produits": [
     {
       "nom": "dedd",
-      "nomCourt": "edede",
+      "nomCourt": "eLOZL",
       "prixBase": 0,
       "prixVente": 0,
       "qteActuel": 0,
@@ -21,6 +21,75 @@
       "seuilMax": 0,
       "unite": 0,
       "id": 3
+    }
+  ],
+  "fournisseurs": [
+    {
+      "nom": "fou",
+      "nomCourt": "fournIII",
+      "ville": "vil",
+      "adresse": "fou",
+      "fax": "059591",
+      "mail": "fournisseur@gmail.com",
+      "telFix": "059590595905959",
+      "telMob": "08988",
+      "id": 2
+    },
+    {
+      "nom": "hippppp",
+      "nomCourt": "hi",
+      "ville": "lllaka",
+      "adresse": "llll",
+      "telFix": -2,
+      "telMob": "",
+      "fax": "",
+      "mail": -2,
+      "id": 3
+    }
+  ],
+  "clients": [
+    {
+      "id": 4,
+      "nom": "foupk",
+      "prenom": "fouoo",
+      "status": "vil",
+      "photo": "photo",
+      "tel": "059591",
+      "email": "fournisseur@gmail.com",
+      "adresse": "09090",
+      "ville": "beni mellal"
+    },
+    {
+      "nom": "nameooo",
+      "prenom": "nae",
+      "status": null,
+      "adresse": -2,
+      "photo": -1,
+      "tel": 1,
+      "email": "",
+      "ville": 1,
+      "id": 5
+    }
+  ],
+  "users": [
+    {
+      "id": "8",
+      "dateCreation": "fou",
+      "dateFin": "10/10/10",
+      "photo": "19/10/10",
+      "tel": "059591",
+      "email": "fournisseur@gmail.com",
+      "profil": "059590595905959",
+      "ville": "08988"
+    },
+    {
+      "dateCreation": "lallalllll",
+      "dateFin": -1,
+      "photo": -1,
+      "email": -1,
+      "profil": -1,
+      "identifiant": -1,
+      "id": "lla"
     }
   ]
 }

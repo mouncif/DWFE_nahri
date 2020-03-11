@@ -1,0 +1,48 @@
+<p>add-produit works!</p>
+<div class="divConfig">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">Home</li>
+        <li class="breadcrumb-item active" aria-current="page">produit</li>
+    </ol>
+    <div class="container">
+        <h3>Gestion des Utilisateurs</h3>
+    </div>
+</div>
+
+
+<div class="container margs">
+    <form>
+
+
+        <div class="form-group">
+            <label for="nc">Nom court</label>
+            <input type="text" [(ngModel)]="user.dateCreation" class="form-control" id="dateCreation" name="dateCreation" placeholder="Nom court">
+        </div>
+        <div class="form-group">
+            <label for="pb">Ville</label>
+            <input type="text" [(ngModel)]="user.dateFin" class="form-control" id="dateFin" name="dateFin" placeholder="prix base">
+        </div>
+        <div class="form-group">
+            <label for="pv">  Adresse</label>
+            <input type="text" [(ngModel)]="user.photo" class="form-control" id="photo" name="photo" placeholder="Prix vente">
+        </div>
+        <div class="form-group">
+            <label for="">tele fix</label>
+            <input type="text" [(ngModel)]="user.email" class="form-control" id="email" name="email" placeholder="seuil max">
+        </div>
+
+
+        <div class="form-group">
+            <label for="qi">mail</label>
+            <input type="text" [(ngModel)]="user.profil" class="form-control" id="profil" name="profil" placeholder="quantite initiale">
+        </div>
+        <div class="form-group">
+            <label for="qi">mail</label>
+            <input type="text" [(ngModel)]="user.identifiant" class="form-control" id="identifiant" name="identifiant" placeholder="quantite initiale">
+        </div>
+        <div class="form-group">
+            <button *ngIf="addOperation" (click)="addUser()" class="btn btn-primary">Ajouter </button>
+            <button *ngIf="!addOperation" (click)="editUser()" class="btn btn-primary">Modifier </button>
+        </div>
+    </form>
+</div>
