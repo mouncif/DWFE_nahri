@@ -4,46 +4,54 @@
         <li class="breadcrumb-item active" aria-current="page">fournisseurs</li>
     </ol>
     <div class="container">
-        <h3>GESTION DES FOURNISSEURS</h3>
+        <h3>Dossier Fournisseur</h3>
     </div>
 </div>
 
 
-<div class="container margs">
-    <form>
 
 
-        <div class="form-group">
+
+
+<form>
+    <div class="form-row">
+        <div class="form-group col-md-4">
             <label for="nom">Nom</label>
             <input type="text" [(ngModel)]="fournisseur.nom" class="form-control" id="nom" name="nom" placeholder="Nom">
         </div>
-        <div class="form-group">
+        <div class="form-group col-md-4">
             <label for="nc">Nom court</label>
             <input type="text" [(ngModel)]="fournisseur.nomCourt" class="form-control" id="nomCourt" name="nomCourt" placeholder="Nom court">
         </div>
-        <div class="form-group">
+        <div class="form-group col-md-3">
             <label for="pb">Ville</label>
-            <input type="text" [(ngModel)]="fournisseur.ville" class="form-control" id="ville" name="ville" placeholder="prix base">
+            <input type="text" [(ngModel)]="fournisseur.ville" class="form-control" id="ville" name="ville" placeholder="ville">
         </div>
-        <div class="form-group">
+
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-4">
             <label for="pv">  Adresse</label>
-            <input type="text" [(ngModel)]="fournisseur.adresse" class="form-control" id="adresse" name="adresse" placeholder="Prix vente">
+            <input type="text" [(ngModel)]="fournisseur.adresse" class="form-control" id="adresse" name="adresse" placeholder="adresse">
         </div>
-        <div class="form-group">
-            <label for="sm">tele fix</label>
-            <input type="text" [(ngModel)]="fournisseur.telFix" class="form-control" id="telFix" name="telFix" placeholder="seuil max">
-        </div>
-
-
-        <div class="form-group">
+        <div class="form-group col-md-4">
             <label for="qi">mail</label>
-            <input type="text" [(ngModel)]="fournisseur.mail" class="form-control" id="mail" name="mail" placeholder="quantite initiale">
+            <input type="text" [(ngModel)]="fournisseur.mail" class="form-control" id="mail" name="mail" placeholder=" mail">
         </div>
 
 
+    </div>
+
+
+
+
+
+    <div class="form-group">
         <div class="form-group">
             <button *ngIf="addOperation" (click)="addFournisseur()" class="btn btn-primary">Ajouter </button>
             <button *ngIf="!addOperation" (click)="editFournisseur()" class="btn btn-primary">Modifier </button>
         </div>
-    </form>
-</div>
+    </div>
+
+
+</form>

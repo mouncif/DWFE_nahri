@@ -1,4 +1,12 @@
-<p>list-produits works!</p>
+<div class="divConfig">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">Home</li>
+        <li class="breadcrumb-item active" aria-current="page">Fournisseurs</li>
+    </ol>
+    <div class="container">
+        <h3>Dossier Fournisseur</h3>
+    </div>
+</div>
 <div class="text-center btn-margs">
     <button class="btn btn-primary" [routerLink]="['/add-fournisseur']">Ajouter fournisseur</button>
 </div>
@@ -14,12 +22,9 @@
                 <th scope="col">ID</th>
                 <th scope="col">nom </th>
                 <th scope="col">Nom court </th>
-                <th scope="col">Prix de base </th>
-                <th scope="col">Prix de vente </th>
-                <th scope="col">Seuil max </th>
-                <th scope="col">unite</th>
-                <th scope="col">quantite unitaire </th>
-                <th scope="col">quantite actuel </th>
+                <th scope="col">Ville </th>
+                <th scope="col">Adresse</th>
+                <th scope="col">Mail</th>
                 <th scope="col">Action </th>
             </tr>
         </thead>
@@ -31,10 +36,7 @@
                 <td>{{fournisseur.adresse}}</td>
                 <td>{{fournisseur.ville}}</td>
                 <td>{{fournisseur.mail}}</td>
-                <td>{{fournisseur.unite}}</td>
-                <td>{{fournisseur.telFix}}</td>
-                <td>{{fournisseur.telMob}}</td>
-                <td>{{fournisseur.fax}}</td>
+
 
 
                 <td>
@@ -42,7 +44,7 @@
                         <span class="badge badge-danger"></span><i class="fas fa-trash"></i>
                     </button>
                     <button class="btn btn-sm btn-success" [routerLink]="['/update-fournisseur', fournisseur.id]">
-                        <span class="badge badge-success"></span><i class="fas fa-pencil"></i> 
+                        <span class="badge badge-success"></span><i class="fas fa-pencil-alt"></i>
                     </button>
                 </td>
             </tr>

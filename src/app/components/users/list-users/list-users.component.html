@@ -1,3 +1,12 @@
+<div class="divConfig">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">Home</li>
+        <li class="breadcrumb-item active" aria-current="page">utilisateurs</li>
+    </ol>
+    <div class="container">
+        <h3>Dossier Utilisateur</h3>
+    </div>
+</div>
 <div class="text-center btn-margs">
     <button class="btn btn-primary" [routerLink]="['/add-user']">Ajouter un utilisateur</button>
 </div>
@@ -10,27 +19,26 @@
     <table class="table">
         <thead>
             <tr>
-                <th scope="col">ID</th>
-                <th scope="col">id </th>
+                <th scope="col">identifiant</th>
+                <th scope="col">photo</th>
+
+                <th scope="col">email</th>
                 <th scope="col">dateCreation</th>
                 <th scope="col">dateFin</th>
-                <th scope="col">photo</th>
-                <th scope="col">email</th>
-                <th scope="col">profil</th>
-                <th scope="col">identifiant</th>
+
                 <th scope="col">Action</th>
 
             </tr>
         </thead>
         <tbody>
             <tr *ngFor="let user of users">
-                <th>{{user.id}}</th>
+                <td>{{user.identifiant}}</td>
+
+                <td> <img src="{{user.photo}}" style="height: 100px; width: 100px;" alt=""></td>
+                <td>{{user.email}}</td>
                 <td>{{user.dateCreation}}</td>
                 <td>{{user.dateFin}}</td>
-                <td>{{user.photo}}</td>
-                <td>{{user.email}}</td>
-                <td>{{user.profil}}</td>
-                <td>{{user.identifiant}}</td>
+
 
 
 
@@ -39,7 +47,7 @@
                         <span class="badge badge-danger"></span><i class="fas fa-trash"></i>
                     </button>
                     <button class="btn btn-sm btn-success" [routerLink]="['/update-user', user.id]">
-                        <span class="badge badge-success"></span><i class="fas fa-pencil"></i> 
+                        <span class="badge badge-success"></span><i class="fas fa-pencil-alt"></i> 
                     </button>
                 </td>
             </tr>

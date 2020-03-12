@@ -1,0 +1,13 @@
+.divConfig {
+    height: 100px;
+    background-color: #ff8080;
+}
+
+.breadcrumb {
+    background-color: transparent;
+    color: white;
+}
+
+.breadcrumb li {
+    color: white;
+}

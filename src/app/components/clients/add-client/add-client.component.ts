@@ -15,7 +15,7 @@ export class AddClientComponent implements OnInit {
     prenom: '',
     status:'',
     adresse: '',
-    photo: '',
+    image: '',
     tel: '',
     email:'',
     ville: ''

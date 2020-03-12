@@ -7,5 +7,6 @@ export interface Produit {
     seuilMax?:number;
     unite?:number;
     qteInit?:number; 
-    qteActuel?:number; 
+    qteActuel?:number;
+    image?:string;
 }

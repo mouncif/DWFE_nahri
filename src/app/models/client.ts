@@ -3,7 +3,7 @@ export interface Client {
     nom: string,
     prenom: string,
     status: string,
-    photo: string,
+    image: string,
     tel: string,
     email: string,
     adresse: string,

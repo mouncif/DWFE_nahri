@@ -4,8 +4,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {HttpClientModule} from '@angular/common/http';
 import {FormsModule}  from '@angular/forms';
-import { NavbarComponent } from './components/navbar/navbar.component';
-import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { ListProduitsComponent } from './components/produits/list-produits/list-produits.component';
 import { AddProduitComponent } from './components/produits/add-produit/add-produit.component';
 import { ListFournisseurComponent } from './components/fournisseurs/list-fournisseur/list-fournisseur.component';
@@ -15,13 +13,14 @@ import { ListClientComponent } from './components/clients/list-client/list-clien
 import { AddClientComponent } from './components/clients/add-client/add-client.component';
 import { ListUsersComponent } from './components/users/list-users/list-users.component';
 import { AddUserComponent } from './components/users/add-user/add-user.component';
+import { NavbarComponent } from './shared/navbar/navbar.component';
+import { SidebarComponent } from './shared/sidebar/sidebar.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
-    SidebarComponent,
+  
     ListProduitsComponent,
     AddProduitComponent,
     ListFournisseurComponent,
@@ -33,7 +32,11 @@ import { AddUserComponent } from './components/users/add-user/add-user.component
     
     ListUsersComponent,
     
-    AddUserComponent,    
+    AddUserComponent,
+    
+    NavbarComponent,
+    
+    SidebarComponent,    
   ],
   imports: [
     BrowserModule,

@@ -8,6 +8,7 @@ import { ListClientComponent } from './components/clients/list-client/list-clien
 import { AddClientComponent } from './components/clients/add-client/add-client.component';
 import { ListUsersComponent } from './components/users/list-users/list-users.component';
 import { AddUserComponent } from './components/users/add-user/add-user.component';
+import { SidebarComponent } from './shared/sidebar/sidebar.component';
 
 
 
@@ -25,6 +26,8 @@ const routes: Routes = [
   { path: 'users', component: ListUsersComponent },
   { path: 'add-user', component: AddUserComponent },
   { path: 'update-user/:id', component: AddUserComponent },
+  { path: 'sidebar', component: SidebarComponent },
+
 
   
 ];

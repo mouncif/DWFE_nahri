@@ -1,95 +1,97 @@
 {
   "produits": [
     {
-      "nom": "dedd",
-      "nomCourt": "eLOZL",
-      "prixBase": 0,
-      "prixVente": 0,
-      "qteActuel": 0,
-      "qteInit": 0,
-      "seuilMax": 0,
-      "unite": 0,
-      "id": 2
+      "nom": "telephone",
+      "nomCourt": "samsung",
+      "prixBase": 1500,
+      "prixVente": 1700,
+      "qteActuel": 19,
+      "qteInit": 18,
+      "seuilMax": 600,
+      "unite": 16,
+      "image": "https://images.samsung.com/is/image/samsung/my-galaxy-a80-a805-sm-a805fzkdxme-frontblack-190347057?$PD_GALLERY_L_JPG$",
+      "id": 7
     },
     {
-      "nom": "aaaaerrrrrrrr",
-      "nomCourt": "errrr",
-      "prixBase": 0,
-      "prixVente": 0,
-      "qteActuel": 0,
-      "qteInit": 0,
-      "seuilMax": 0,
-      "unite": 0,
-      "id": 3
+      "nom": "pc portable",
+      "nomCourt": "asus",
+      "prixBase": 5000,
+      "prixVente": 6000,
+      "qteActuel": 19,
+      "qteInit": 12,
+      "seuilMax": 600,
+      "unite": 15,
+      "image": "data:image/jpeg;base64,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",
+      "id": 8
     }
   ],
   "fournisseurs": [
     {
-      "nom": "fou",
-      "nomCourt": "fournIII",
-      "ville": "vil",
-      "adresse": "fou",
-      "fax": "059591",
-      "mail": "fournisseur@gmail.com",
-      "telFix": "059590595905959",
-      "telMob": "08988",
-      "id": 2
-    },
-    {
-      "nom": "hippppp",
-      "nomCourt": "hi",
-      "ville": "lllaka",
-      "adresse": "llll",
-      "telFix": -2,
+      "nom": "mohamed",
+      "nomCourt": "med",
+      "ville": "Beni mellal",
+      "adresse": "bloc 54 N08",
+      "telFix": "",
       "telMob": "",
       "fax": "",
-      "mail": -2,
-      "id": 3
+      "mail": "mohamed@gmail.com",
+      "id": 4
+    },
+    {
+      "nom": "ikram",
+      "nomCourt": "ikm",
+      "ville": "Casablanca",
+      "adresse": "bloc 65 n 09",
+      "telFix": "",
+      "telMob": "",
+      "fax": "",
+      "mail": "ikram@gmail.com",
+      "id": 5
     }
   ],
   "clients": [
     {
-      "id": 4,
-      "nom": "foupk",
-      "prenom": "fouoo",
-      "status": "vil",
-      "photo": "photo",
-      "tel": "059591",
-      "email": "fournisseur@gmail.com",
-      "adresse": "09090",
-      "ville": "beni mellal"
+      "nom": "nahri",
+      "prenom": "abderrahim",
+      "status": "client",
+      "adresse": "bloc 35 N 06",
+      "photo": "C:\\Users\\ABDO\\Desktop\\tous\\1.png",
+      "tel": "0607080907",
+      "email": "abderrahim.nahri@gmail.com",
+      "ville": "Casablanca",
+      "id": 6,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Crystal_Clear_app_kuser.svg/1024px-Crystal_Clear_app_kuser.svg.png"
     },
     {
-      "nom": "nameooo",
-      "prenom": "nae",
-      "status": null,
-      "adresse": -2,
-      "photo": -1,
-      "tel": 1,
-      "email": "",
-      "ville": 1,
-      "id": 5
+      "nom": "ahmed",
+      "prenom": "aziz",
+      "status": "client",
+      "adresse": "bloc 72 n 09",
+      "tel": "0607080909",
+      "email": "ahmed@gmail.com",
+      "ville": "agadir",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/User_icon_2.svg/1024px-User_icon_2.svg.png",
+      "id": 7
     }
   ],
   "users": [
     {
-      "id": "8",
-      "dateCreation": "fou",
-      "dateFin": "10/10/10",
-      "photo": "19/10/10",
-      "tel": "059591",
-      "email": "fournisseur@gmail.com",
-      "profil": "059590595905959",
-      "ville": "08988"
+      "dateCreation": "2020-02-25",
+      "dateFin": "2020-03-05",
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/1/19/Boss-icon.png",
+      "email": "abdoo0@hotmail.fr",
+      "profil": "",
+      "identifiant": "XYZ",
+      "id": "rs3V5mP"
     },
     {
-      "dateCreation": "lallalllll",
-      "dateFin": -1,
-      "photo": -1,
-      "email": -1,
-      "profil": -1,
-      "identifiant": -1,
-      "id": "lla"
+      "dateCreation": "2020-02-24",
+      "dateFin": "2020-03-14",
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQB7SvD-mU2YDSnApBoHh1FrolaKCqQaYjsPtHo9RpNNPpnCKCA",
+      "email": "ahmed@gmail.com",
+      "profil": "",
+      "identifiant": "yzoo",
+      "id": "s-aWQoy"
     }
   ]
 }
