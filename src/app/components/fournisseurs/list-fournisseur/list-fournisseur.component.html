@@ -11,12 +11,8 @@
     <button class="btn btn-primary" [routerLink]="['/add-fournisseur']">Ajouter fournisseur</button>
 </div>
 <div class="col-sm-12">
-    <div class="row">
-        <div class="col-md-6">
-            <h3>LISTE DES FOURNISSEURS</h3>
-        </div>
-    </div>
-    <table class="table">
+
+    <table class="table table-striped">
         <thead>
             <tr>
                 <th scope="col">ID</th>
@@ -42,18 +38,13 @@
                 <td>
                     <button (click)="deleteFournisseur(fournisseur.id)" class='btn btn-sm btn-danger'>
                         <span class="badge badge-danger"></span><i class="fas fa-trash"></i>
-                    </button>
+                    </button> &nbsp;&nbsp;
                     <button class="btn btn-sm btn-success" [routerLink]="['/update-fournisseur', fournisseur.id]">
                         <span class="badge badge-success"></span><i class="fas fa-pencil-alt"></i>
                     </button>
                 </td>
             </tr>
-            <!-- <script>
-                $("#menu-toggle").click(function(e) {
-                    e.preventDefault();
-                    $("#wrapper").toggleClass("toggled");
-                });
-            </script> -->
+
         </tbody>
     </table>
 </div>

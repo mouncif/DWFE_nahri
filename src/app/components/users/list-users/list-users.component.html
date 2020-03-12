@@ -11,12 +11,8 @@
     <button class="btn btn-primary" [routerLink]="['/add-user']">Ajouter un utilisateur</button>
 </div>
 <div class="col-sm-12">
-    <div class="row">
-        <div class="col-md-6">
-            <h3>LISTE DES UTILISATEURS</h3>
-        </div>
-    </div>
-    <table class="table">
+
+    <table class="table table-striped">
         <thead>
             <tr>
                 <th scope="col">identifiant</th>
@@ -34,7 +30,7 @@
             <tr *ngFor="let user of users">
                 <td>{{user.identifiant}}</td>
 
-                <td> <img src="{{user.photo}}" style="height: 100px; width: 100px;" alt=""></td>
+                <td> <img src="{{user.photo}}" style="height: 60px;" alt=""></td>
                 <td>{{user.email}}</td>
                 <td>{{user.dateCreation}}</td>
                 <td>{{user.dateFin}}</td>
@@ -45,7 +41,7 @@
                 <td>
                     <button (click)="deleteUser(user.id)" class='btn btn-sm btn-danger'>
                         <span class="badge badge-danger"></span><i class="fas fa-trash"></i>
-                    </button>
+                    </button>&nbsp;&nbsp;
                     <button class="btn btn-sm btn-success" [routerLink]="['/update-user', user.id]">
                         <span class="badge badge-success"></span><i class="fas fa-pencil-alt"></i> 
                     </button>

@@ -11,12 +11,8 @@
     <button class="btn btn-primary" [routerLink]="['/add-produit']">Ajouter produit</button>
 </div>
 <div class="col-sm-12">
-    <div class="row">
-        <div class="col-md-6">
-            <h3>liste des produits </h3>
-        </div>
-    </div>
-    <table class="table">
+
+    <table class="table table-striped">
         <thead>
             <tr>
                 <th scope="col">ID</th>
@@ -37,7 +33,7 @@
 
                 <th>{{produit.id}}</th>
                 <th>
-                    <img src="{{produit.image}}" style="height: 100px; width: 100px;" alt="">
+                    <img src="{{produit.image}}" style="height: 60px;" alt="">
                 </th>
                 <td>{{produit.nom}}</td>
                 <td>{{produit.nomCourt}}</td>
@@ -48,10 +44,10 @@
                 <td>{{produit.qteInit}}</td>
                 <td>{{produit.qteActuel}}</td>
 
-                <td>
+                <td style="width: 120px;">
                     <button (click)="deleteProduit(produit.id)" class='btn btn-sm btn-danger'>
                         <span class="badge badge-danger"></span><i class="fas fa-trash"></i>
-                    </button>
+                    </button>&nbsp;&nbsp;
                     <button class="btn btn-sm btn-success" [routerLink]="['/update-produit', produit.id]">
                         <span class="badge badge-success"></span><i class="fas fa-pencil-alt"></i>
                     </button>
